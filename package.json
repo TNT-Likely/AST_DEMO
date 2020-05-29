@@ -1,0 +1,25 @@
+{
+  "name": "ast_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/generator": "^7.10.1",
+    "@babel/parser": "^7.10.1",
+    "@babel/traverse": "^7.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TNT-Likely/AST_DEMO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TNT-Likely/AST_DEMO/issues"
+  },
+  "homepage": "https://github.com/TNT-Likely/AST_DEMO#readme"
+}
