@@ -1,0 +1,53 @@
+<template>
+    <view class="guide-container">
+        <image class="guide-bg" src="../../image/guide.jpg"/>
+        <Button 
+            @btnevent.user="goLogin" 
+            class="btn-m guide-button"
+            utrp="guideButtonLogin"
+        >去登录</Button>
+    </view>
+</template>
+
+<script>
+import wepy from 'wepy';
+import Button from '../../components/button';
+
+export default class Guide extends wepy.page {
+    data = {};
+
+    components = {
+        Button
+    };
+
+    methods = {
+        goLogin(){
+            wx.navigateTo({
+                url: '/pages/login/login',
+            })
+        }
+    };
+
+    onLoad(){
+        this.$parent.redpill.collectPageRpLog('guide')
+    }
+}
+</script>
+
+<style>
+.guide-container {
+    background-color: #fff;
+    height: 100%;
+    position: relative;
+}
+.guide-bg{
+    width: 750rpx;
+    height: 980rpx;
+}
+.guide-button {
+    position: absolute;
+    width: 690rpx;
+    bottom: 64rpx;
+    left: 30rpx;
+}
+</style>
